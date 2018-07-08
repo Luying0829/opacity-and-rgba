@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-color中opacity和rgba的不同</title>
+    <style>
+    .one{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        opacity: 0.2;  
+        /* 文字和颜色一起变 */
+
+    }
+    .two{
+        width: 200px;
+        height: 200px;
+        background-color:  rgba(241, 2, 21, .2);
+        /* 文字不变,就单独颜色的深浅变 */
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="one">我是第一个盒子</div>
+    <div class="two">我是第二个盒子</div>
+</body>
+</html>
+
+<!-- 字面理解即可 -->
+<!--    opacity:透明度
+        rgba:颜色的进制表示  -->
